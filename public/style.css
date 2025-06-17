@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f3f3f3;
+  color: #333;
+}
+header {
+  background-color: #ffcc70;
+  text-align: center;
+  padding: 1rem;
+}
+h1 {
+  margin: 0;
+}
+#chapters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.chapter-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.chapter-card:hover {
+  transform: scale(1.02);
+}
+.chapter-card p {
+  margin: 0.3rem 0;
+}
+#verses-section {
+  padding: 1rem;
+}
+.hidden {
+  display: none;
+}
+.verse {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid #ffc107;
+  border-radius: 5px;
+}
+#back-btn {
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
